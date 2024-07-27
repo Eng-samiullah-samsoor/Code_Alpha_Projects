@@ -4,6 +4,7 @@
   <title>Age Calculator</title>
   <style>
     body {
+      
         background-color: lightblue;
       font-family: Arial, sans-serif;
       text-align: center;
@@ -69,6 +70,7 @@
       var m = today.getMonth() - birthDate.getMonth();
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
+
       }
       document.getElementById("result").innerHTML = "You are " + age + " years old.";
     });
